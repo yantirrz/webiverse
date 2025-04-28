@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </head>
+  <body class="font-[Manrope]">
+    <!-- navbar -->
+    <nav class="bg-white">
+      <div class="mx-4 my-2 items-center flex justify-between sm:mx-4 md:mx-20">
+        <div class="flex items-center">
+          <div class="">
+            <img src="images/svg/download-removebg-preview 1 (1).svg" alt="logo" />
+          </div>
+          <div class="w-20">
+            <img src="images/logo (5).png" alt="" />
+          </div>
+        </div>
+        <div class="nav-links hidden md:block bg-white absolute w-full left-0 top-[9%] md:flex text-base md:static md:justify-center md:w-1/2">
+          <ul class="mx-6 my-4 md:flex md:items-center md:gap-4">
+            <li><a href="">Home</a></li>
+            <li><a href="">Tentang</a></li>
+            <li><a href="">Webinar</a></li>
+            <li><a href="">Jadwal</a></li>
+            <li><a href="">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="bg-[#8C82FC] px-5 py-2 rounded-full hover:bg-[#492ca7] text-white">Sign In</button>
+          <div class="icon">
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section>
+      <div class="px-4 py-6 py-10 md:px-16 md:py-16">
+        <div class="flex flex-col gap-4 md:flex-row md:gap-10 md:justify-between">
+          <div class="flex flex-col gap-4 md:w-[500px]">
+            <h1 class="text-[#22293E] text-2xl font-extrabold md:text-4xl md">Temukan Webinar Sesuai Minat Anda!</h1>
+            <p class="font-normal text-justify">Webiverse Webinar: Platform webinar gratis yang memberi Anda akses ke ilmu bermanfaat dan peluang belajar dari mana saja. Temukan manfaatnya dan tingkatkan pengetahuan Anda bersama kami!</p>
+            <button class="bg-[#8C82FC] px-5 py-2 md:w-[200px] rounded-full hover:bg-[#492ca7] text-white">Daftar Sekarang!</button>
+          </div>
+          <div class="flex items-center justify-center md:flex md:w-[500px] md:items-center">
+            <img src="images/with-laptop.png" class="w-[300px] mx-[30px] md:w-[400px] flex justify-center items-center" alt="laptop" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section -->
+    <section class="bg-[#EDEFFF] w-full h-fit py-6">
+      <div class="mx-4 my-2 flex flex-col md:mx-20 md:py-10 md:flex-row md:flex md:justify-between md:gap-10">
+        <div class="m-auto md:m-0">
+          <img src="images/online-education.png" class="w-[300px] md:w-[350px]" alt="edu" />
+        </div>
+        <div class="flex flex-col gap-4 md:w-[500px]">
+          <h2 class="text-2xl text-[#22293E] font-bold flex align-center justify-center">Tentang kami</h2>
+          <p class="text-justify">
+            Webiverse adalah sebuah platform digital yang dirancang khusus untuk menyediakan webinar berkualitas tinggi secara gratis. Dibangun untuk menjadi sumber daya pembelajaran bagi siapa saja, Webiverse menghadirkan sesi-sesi webinar
+            yang mencakup berbagai topik, mulai dari pengembangan diri, keterampilan teknis, hingga tren industri terbaru. Webiverse diciptakan untuk membantu siapa pun yang ingin meningkatkan pengetahuan dan keterampilan mereka dengan
+            mudah tanpa biaya.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- card webinar -->
+    <main>
+      <div class="mx-4 my-4 md:mx-5 lg:mx-20">
+        <h2 class="text-2xl text-[#22293E] font-bold flex align-center justify-center pb-[4px]">Webinar Terkini</h2>
+        <div class="grid grid-cols-1 gap-6 place-items-center md:grid-cols-3 lg:grid-cols-4 md:gap-5 items-start">
+          <!-- card 1 -->
+          <div class="w-[320px] h-fit pb-[5px] shadow-md aspect-auto rounded-lg md:w-[250px] bg-white">
+            <div class="w-full">
+              <img src="images/poster/1.png" alt="" />
+            </div>
+            <div class="mx-2 my-2 flex flex-col gap-2">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Teknologi Pendidikan: Kolaborasi Siswa dan Guru untuk Meningkatkan Prestasi Akademis </h3>
+                <p>Kolaborasi antara siswa dan guru dalam meningkatkan prestasi akademik serta inovasi pembelajaran</p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-2">
+                  <img
+                    src="images/svg/calender.svg
+                    "
+                    alt=""
+                  />
+                  <span class="font-bold">2024-09-28</span>
+                </div>
+                <div class="flex gap-2">
+                  <img src="images/svg/Time Machine (2).svg" alt="" />
+                  <span class="font-bold">19.30 WIB</span>
+                </div>
+                <div class="px-1 py-1 flex gap-2">
+                  <img src="images/svg/Video Call (1).svg" alt="" />
+                  <span class="font-bold">ZOOM</span>
+                </div>
+              </div>
+              <button class="bg-[#8C82FC] px-5 py-2 rounded-full hover:bg-[#492ca7] text-white">Daftar sekarang</button>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="w-[320px] h-fit pb-[5px] shadow-md aspect-auto rounded-lg md:w-[250px] bg-white">
+            <div class="w-full">
+              <img src="images/poster/2.png" alt="" />
+            </div>
+            <div class="mx-2 my-2 flex flex-col gap-2">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Menjaga Kesehatan Mental Saat Menjalani Kuliah:  </h3>
+                <p>Menjaga kesehatan mental saat menjalani kuliah sangat penting untuk menjaga keseimbangan hidup, produktivitas, dan kebahagiaan.</p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-2">
+                  <img
+                    src="images/svg/calender.svg
+                    "
+                    alt=""
+                  />
+                  <span class="font-bold">2024-09-27</span>
+                </div>
+                <div class="flex gap-2">
+                  <img src="images/svg/Time Machine (2).svg" alt="" />
+                  <span class="font-bold">19.30 WIB</span>
+                </div>
+                <div class="px-1 py-1 flex gap-2">
+                  <img src="images/svg/Video Call (1).svg" alt="" />
+                  <span class="font-bold">ZOOM</span>
+                </div>
+              </div>
+              <button class="bg-[#8C82FC] px-5 py-2 rounded-full hover:bg-[#492ca7] text-white md:mt-[5px]">Daftar sekarang!</button>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="w-[320px] h-fit pb-[5px] shadow-md aspect-auto rounded-lg md:w-[250px] bg-white">
+            <div class="w-full">
+              <img src="images/poster/3.png" alt="" />
+            </div>
+            <div class="mx-2 my-2 flex flex-col gap-2">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Temukan Potensi Diri dan Raih Kesuksesan Hidup Mulia </h3>
+                <p>Webinar ini mengupas secara mendalam cara menggali potensi diri dengan efektif, meraih sukses sejati yang diimpikan, dan membangun motivasi.</p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-2">
+                  <img
+                    src="images/svg/calender.svg
+                    "
+                    alt=""
+                  />
+                  <span class="font-bold">2024-09-28</span>
+                </div>
+                <div class="flex gap-2">
+                  <img src="images/svg/Time Machine (2).svg" alt="" />
+                  <span class="font-bold">08.30 WIB</span>
+                </div>
+                <div class="px-1 py-1 flex gap-2">
+                  <img src="images/svg/Video Call (1).svg" alt="" />
+                  <span class="font-bold">ZOOM</span>
+                </div>
+              </div>
+              <button class="bg-[#8C82FC] px-5 py-2 rounded-full hover:bg-[#492ca7] text-white">Daftar sekarang</button>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="w-[320px] h-fit pb-[5px] shadow-md aspect-auto rounded-lg md:w-[250px] bg-white">
+            <div class="w-full">
+              <img src="images/poster/4.png" alt="" />
+            </div>
+            <div class="mx-2 my-2 flex flex-col gap-2">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Cara Membuat Personal Branding yang Meningkatkan Resonansi</h3>
+                <p>"Bagaimana Cara Membuat Personal Branding yang Beresonansi" untuk membangun citra diri yang kuat. Pelajari strateginya.</p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-2">
+                  <img
+                    src="images/svg/calender.svg
+                    "
+                    alt=""
+                  />
+                  <span class="font-bold">2024-09-27</span>
+                </div>
+                <div class="flex gap-2">
+                  <img src="images/svg/Time Machine (2).svg" alt="" />
+                  <span class="font-bold">15.00 WIB</span>
+                </div>
+                <div class="px-1 py-1 flex gap-2">
+                  <img src="images/svg/Video Call (1).svg" alt="" />
+                  <span class="font-bold">ZOOM</span>
+                </div>
+              </div>
+              <button class="bg-[#8C82FC] px-5 py-2 rounded-full hover:bg-[#492ca7] text-white">Daftar sekarang</button>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="w-[320px] h-fit pb-[5px] shadow-md aspect-auto rounded-lg md:w-[250px] bg-white">
+            <div class="w-full">
+              <img src="images/poster/5.png" alt="" />
+            </div>
+            <div class="mx-2 my-2 flex flex-col gap-2">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Optimasi Cashflow UMKM: solusi praktis untuk masalah keuangan UMKM</h3>
+                <p>Dapatkan solusi praktis untuk masalah keuangan UMKM, seperti arus kas tidak stabil dan kesulitan mengatur cashflow. Buruan daftar sekarang! </p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-2">
+                  <img
+                    src="images/svg/calender.svg
+                    "
+                    alt=""
+                  />
+                  <span class="font-bold">2024-09-27</span>
+                </div>
+                <div class="flex gap-2">
+                  <img src="images/svg/Time Machine (2).svg" alt="" />
+                  <span class="font-bold">15.00 WIB</span>
+                </div>
+                <div class="px-1 py-1 flex gap-2">
+                  <img src="images/svg/Video Call (1).svg" alt="" />
+                  <span class="font-bold">ZOOM</span>
+                </div>
+              </div>
+              <button class="bg-[#8C82FC] px-5 py-2 rounded-full hover:bg-[#492ca7] text-white md:mt-[5px]">Daftar sekarang</button>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="w-[320px] h-fit pb-[5px] shadow-md aspect-auto rounded-lg md:w-[250px] bg-white">
+            <div class="w-full">
+              <img src="images/poster/6.png" alt="" />
+            </div>
+            <div class="mx-2 my-2 flex flex-col gap-2">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Mengenal Diri untuk Pertumbuhan Karir dan Bisnis. </h3>
+                <p>Self-Identity merupakan hal yang sangat penting dalam pengembangan karir dan kesuksesan bisnis yang ingin diraih karena pemahaman yang kuat tentang diri sendiri</p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-2">
+                  <img
+                    src="images/svg/calender.svg
+                    "
+                    alt=""
+                  />
+                  <span class="font-bold">2024-10-30</span>
+                </div>
+                <div class="flex gap-2">
+                  <img src="images/svg/Time Machine (2).svg" alt="" />
+                  <span class="font-bold">19.30 WIB</span>
+                </div>
+                <div class="px-1 py-1 flex gap-2">
+                  <img src="images/svg/Video Call (1).svg" alt="" />
+                  <span class="font-bold">ZOOM</span>
+                </div>
+              </div>
+              <button class="bg-[#8C82FC] px-5 py-2 rounded-full hover:bg-[#492ca7] text-white md:mt-[7px]">Daftar sekarang</button>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="w-[320px] h-fit pb-[5px] shadow-md aspect-auto rounded-lg md:w-[250px] bg-white">
+            <div class="w-full">
+              <img src="images/poster/7.png" alt="" class="md:h-[228px] md:w-full" />
+            </div>
+            <div class="mx-2 my-2 flex flex-col gap-2">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Cara Membuat Personal Branding yang Meningkatkan Resonansi</h3>
+                <p>"Bagaimana Cara Membuat Personal Branding yang Beresonansi" untuk membangun citra diri yang kuat. Pelajari strateginya.</p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-2">
+                  <img
+                    src="images/svg/calender.svg
+                    "
+                    alt=""
+                  />
+                  <span class="font-bold">2024-09-19</span>
+                </div>
+                <div class="flex gap-2">
+                  <img src="images/svg/Time Machine (2).svg" alt="" />
+                  <span class="font-bold">19.00 WIB</span>
+                </div>
+                <div class="px-1 py-1 flex gap-2">
+                  <img src="images/svg/Video Call (1).svg" alt="" />
+                  <span class="font-bold">ZOOM</span>
+                </div>
+              </div>
+              <button class="bg-[#8C82FC] px-5 py-2 rounded-full hover:bg-[#492ca7] text-white">Daftar sekarang</button>
+            </div>
+          </div>
+          <!-- card 8 -->
+          <div class="w-[320px] h-fit pb-[5px] shadow-md aspect-auto rounded-lg md:w-[250px] bg-white">
+            <div class="w-full">
+              <img src="images/poster/8.png" alt="" />
+            </div>
+            <div class="mx-2 my-2 flex flex-col gap-2">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl font-bold">Cara Membuat Personal Branding yang Meningkatkan Resonansi</h3>
+                <p>"Bagaimana Cara Membuat Personal Branding yang Beresonansi" untuk membangun citra diri yang kuat. Pelajari strateginya.</p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-2">
+                  <img
+                    src="images/svg/calender.svg
+                    "
+                    alt=""
+                  />
+                  <span class="font-bold">2024-10-24</span>
+                </div>
+                <div class="flex gap-2">
+                  <img src="images/svg/Time Machine (2).svg" alt="" />
+                  <span class="font-bold">09.30 WIB</span>
+                </div>
+                <div class="px-1 py-1 flex gap-2">
+                  <img src="images/svg/Video Call (1).svg" alt="" />
+                  <span class="font-bold">ZOOM</span>
+                </div>
+              </div>
+              <button class="bg-[#8C82FC] px-5 py-2 rounded-full hover:bg-[#492ca7] text-white">Daftar sekarang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- section info selengkapnya -->
+    <div class="mb-8">
+      <div class="flex justify-center items-center my-6">
+        <h3 class="text-xl font-bold text-[#22293E]">Info selengkapnya hubungi:</h3>
+      </div>
+      <div class="flex flex-col justify-center items-center gap-4">
+        <div class="flex flex-row gap-3 items-center w-[200px]">
+          <img src="images/sosmed-logo/skill-icons_instagram (1).svg" alt="" />
+          <a href="" class="font-bold">webiverse_official</a>
+        </div>
+        <div class="flex flex-row gap-3 items-center w-[200px]">
+          <img src="images/sosmed-logo/logos_google-gmail (1).svg" alt="" />
+          <a href="" class="font-bold">wbvers@gmail.com</a>
+        </div>
+        <div class="flex flex-row gap-3 items-center w-[200px]">
+          <img src="images/sosmed-logo/logos_whatsapp-icon (1).svg" alt="" />
+          <a href="" class="font-bold">087717476555</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="h-fit w-full bg-[#8C82FC]">
+      <p class="text-[12px] text-white font-bold flex items-center justify-center pt-4 pb-4">© 2024 Webiverse. All rights reserved.</p>
+    </footer>
+    <script>
+      const navLinks = document.querySelector('.nav-links');
+      function onToggleMenu(e) {
+        e.name = e.name === 'menu' ? 'close' : 'menu';
+        navLinks.classList.toggle('hidden');
+      }
+    </script>
+  </body>
+</html>
