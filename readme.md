@@ -12,7 +12,7 @@ Initially built with Vanilla CSS, later optimized using Tailwind CSS for a more 
 
 🛠️ Technologies Used
 -HTML5
--Tailwind CSS (replacing Vanilla CSS)
+-Tailwind CSS (replacing Vanilla CSS when 2024)
 -Zoom as the webinar platform
 
 🚀 How to Run This Project
